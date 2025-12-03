@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produto - Multiverse Outfits</title>
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="./css/produto.css">
+</head>
+<body>
+  <!-- ====== BARRA PROMOCIONAL ====== -->
+  <div class="promo-bar" role="alert" aria-label="Promoção especial">
+    Frete grátis em todos os pedidos acima de $200! Por tempo limitado.
+  </div>
+
+  <!-- ====== CABEÇALHO PRINCIPAL ====== -->
+  <header class="site-header bg-white border-bottom py-3">
+    
+    <div class="container d-flex align-items-center justify-content-between">
+      <!-- Logo -->
+      <div class="d-flex align-items-center gap-2 logo">
+        <a href="index.html" class="header-link d-flex align-items-center gap-2">
+        <span class="fs-3"><img src="img/simbolo.png" alt="Logo da empresa Multiverse Outfits" width="40"></span>
+        <span class="fw-bold fs-5">Multiverse</span>
+        </a>
+      </div>
+
+      <!-- BOOTSTRAP: BARRA DE PESQUISA -->
+      <div class="flex-grow-1 px-4">
+        <div class="input-group rounded-pill border overflow-hidden">
+          <span class="input-group-text bg-white border-0" aria-label="Ícone de pesquisa">
+            <i class="bi bi-search-heart fs-5"></i>
+          </span>
+          <input type="text" class="form-control border-0" placeholder="Pesquisar produtos..." 
+                 aria-label="Campo de pesquisa de produtos">
+        </div>
+      </div>
+
+      <!-- BOOTSTRAP: ÍCONES DE NAVEGAÇÃO -->
+      <div class="d-flex align-items-center gap-4">
+        <!-- Favoritos -->
+        <div class="position-relative fs-4 header-icon" role="button" tabindex="0" 
+             aria-label="Favoritos - 12 itens">
+          <i class="bi bi-heart"></i>
+          <span class="badge bg-dark text-white position-absolute top-0 start-100 translate-middle rounded-pill"
+                aria-label="12 itens nos favoritos">12</span>
+        </div>
+
+        <!-- Login -->
+        <div class="d-flex align-items-center gap-1 fs-5 header-icon">
+          <a href="login.html" class="text-decoration-none text-dark" aria-label="Ir para página de login">
+            <i class="bi bi-person"></i>
+            <span class="fw-semibold">Login</span>
+          </a>
+        </div>
+
+        <!-- Carrinho -->
+        <div class="position-relative fs-4 header-icon">
+          <a href="carrinho.html" class="text-dark text-decoration-none" aria-label="Ir para carrinho de compras - 2 itens">
+            <i class="bi bi-cart"></i>
+            <span class="badge bg-dark text-white position-absolute top-0 start-100 translate-middle rounded-pill"
+                  aria-label="2 itens no carrinho">2</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====== NAVEGAÇÃO PRINCIPAL ====== -->
+  <nav class="bg-white py-2 border-bottom" aria-label="Navegação principal">
+    <div class="container d-flex justify-content-between">
+      <div class="d-flex gap-4">
+        <a href="#" class="text-decoration-none text-dark fw-semibold">Produtos</a>
+        <a href="#" class="text-decoration-none text-dark fw-semibold">Promoção</a>
+        <a href="#" class="text-decoration-none text-dark fw-semibold">Inspiração</a>
+        <a href="#" class="text-decoration-none text-dark fw-semibold">Marcas</a>
+        <a href="#" class="text-decoration-none text-dark fw-semibold">Outlet</a>
+      </div>
+      <div class="d-flex gap-4">
+        <a href="#" class="text-decoration-none text-dark fw-semibold">Envio</a>
+        <a href="#" class="text-decoration-none text-dark fw-semibold">Devoluções & Garantia</a>
+        <a href="#" class="text-decoration-none text-dark fw-semibold">Contato</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ====== CONTEÚDO PRINCIPAL ====== -->
+  <main class="container mt-4">
+    <!-- BOOTSTRAP: NAVEGAÇÃO DE MIGALHAS -->
+    <div class="breadcrumb-custom small mb-3">
+      <a href="categoria.html" class="text-decoration-none" aria-label="Voltar para todos os produtos">Todos os Produtos</a>  
+      <a href="categoria.html" class="text-decoration-none" aria-label="Ir para categoria">Categoria</a>  
+      <a href="#" class="text-decoration-none" aria-label="Ir para subcategoria">Subcategoria</a>
+    </div>
+
+    <!-- BOOTSTRAP: GRADE DO PRODUTO -->
+    <div class="row g-5 align-items-start">
+      <!-- COLUNA ESQUERDA - IMAGENS -->
+      <div class="col-md-7">
+        <!-- IMAGEM PRINCIPAL -->
+        <div class="product-main-img" role="img" aria-label="Imagem principal do produto - Camiseta Feminina Futurista">
+          <img src="img/mulheres.jpeg" alt="Camiseta da Multiverse - Mulheres mostrando as estampas">
+        </div>
+    
+        <!-- MINIATURAS -->
+        <div class="d-flex gap-3 mt-3" role="list" aria-label="Miniaturas do produto">
+          <div class="thumb-img active" role="listitem" tabindex="0" aria-label="Variação 1 do produto"><img src="img/camisa1.jpeg" alt=""></div>
+          <div class="thumb-img" role="listitem" tabindex="0" aria-label="Variação 2 do produto"><img src="img/camisa1.jpeg" alt=""></div>
+          <div class="thumb-img" role="listitem" tabindex="0" aria-label="Variação 3 do produto"><img src="img/camisa1.jpeg" alt=""></div>
+        </div>
+      </div>
+    
+      <!-- COLUNA DIREITA - INFORMAÇÕES -->
+      <div class="col-md-5">
+        <h1 class="h4 fw-bold mb-1" itemprop="name">Camiseta Feminina Futurista - Coleção Multiverse</h1>
+        <p class="small text-muted mb-3" itemprop="description">Camiseta de algodão premium com estampa futurista, cor preta, tamanho único</p>
+    
+        <!-- PREÇO -->
+        <div class="mb-3" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+          <h3 class="fw-bold mb-0">
+            <span itemprop="priceCurrency" content="BRL">R$</span>
+            <span itemprop="price" content="95.00">95</span> 
+            <span class="price-old">R$ 119</span>
+            <span class="discount-badge">-20%</span>
+          </h3>
+          <div class="small text-muted">R$ 75,50 sem impostos</div>
+        </div>
+    
+        <!-- AVALIAÇÃO -->
+        <div class="d-flex align-items-center gap-2 mb-3" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+          <span class="rating-stars" aria-label="Avaliação: 4 estrelas de 5">★★★★☆</span>
+          <span class="small text-muted">
+            <span itemprop="ratingValue">4</span> estrelas (<span itemprop="reviewCount">12</span> avaliações)
+          </span>
+        </div>
+    
+        <!-- SELETOR DE COR -->
+        <div class="color-selector d-flex justify-content-between small mb-3">
+          <div>
+            <span class="text-muted">Cor:</span><br>
+            Preto
+          </div>
+          <a href="#" class="text-decoration-none" aria-label="Alterar cor do produto">Alterar</a>
+        </div>
+    
+      <a href="carrinho.html" 
+        class="btn btn-dark w-100 py-3 fw-bold text-decoration-none text-white" 
+        aria-label="Ir para o carrinho - Camiseta Feminina Futurista por R$ 95">
+       <i class="bi bi-cart me-2"></i> ADICIONAR AO CARRINHO
+     </a>
+     
+        <!-- DISPONIBILIDADE -->
+        <div class="small text-muted mt-3 d-flex justify-content-between">
+          <span><span class="availability-dot"></span> Disponível em estoque</span>
+          <span>Entrega em 3-4 dias úteis</span>
+        </div>
+    
+        <!-- CARACTERÍSTICAS -->
+        <ul class="small mt-3 product-features">
+          <li>100% algodão premium</li>
+          <li>Estampa futurista exclusiva Multiverse</li>
+          <li>Tecido respirável e macio</li>
+          <li>Lavagem à máquina - 30°C</li>
+          <li>Tamanho único (veste do P ao G)</li>
+        </ul>
+      </div>
+    </div>
+    
+<!-- SEÇÕES DO PRODUTO -->
+<div class="product-sections mt-5">
+
+  <details class="product-details">
+    <summary class="product-summary d-flex justify-content-between align-items-center">
+      <span class="fw-bold">Detalhes do Produto</span>
+      <span class="section-icon">›</span>
+    </summary>
+
+    <div class="product-content">
+      <!-- coloque o conteúdo aqui -->
+      <p>Informações completas sobre o material, composição e características da camiseta.</p>
+    </div>
+  </details>
+
+  <details class="product-details">
+    <summary class="product-summary d-flex justify-content-between align-items-center">
+      <span class="fw-bold">Tamanho & Medidas</span>
+      <span class="section-icon">›</span>
+    </summary>
+
+    <div class="product-content">
+      <!-- conteúdo sobre tamanhos -->
+      <p>Tabela completa de tamanhos e instruções de medição.</p>
+    </div>
+  </details>
+
+  <details class="product-details">
+    <summary class="product-summary d-flex justify-content-between align-items-center">
+      <span class="fw-bold">Avaliações</span>
+      <span class="section-icon">›</span>
+    </summary>
+
+    <div class="product-content">
+      <!-- conteúdo sobre reviews -->
+      <p>Aqui ficarão as avaliações dos clientes.</p>
+    </div>
+  </details>
+
+</div>
+
+<!-- BOOTSTRAP: PRODUTOS RELACIONADOS -->
+<h5 class="mt-5 mb-4 section-title">Produtos Relacionados</h5>
+
+<div class="row row-cols-2 row-cols-md-5 g-4 mt-1" role="list" aria-label="Produtos relacionados">
+
+  <div class="col" role="listitem">
+    <div class="related-product" 
+         role="img" 
+         aria-label="Camiseta Essential Classic"
+         style="background-image: url('/produtos/produto14.JPG'); background-size: cover; background-position: center;">
+    </div>
+    <div class="small mt-2 fw-semibold">Camiseta Essential Classic</div>
+    <div class="small text-muted">Algodão macio, ideal para o dia a dia.</div>
+    <div class="fw-bold">R$ 95</div>
+  </div>
+
+  <div class="col" role="listitem">
+    <div class="related-product" 
+         role="img" 
+         aria-label="Camiseta Premium Comfort"
+         style="background-image: url('/produtos/produto2.JPG'); background-size: cover; background-position: center;">
+    </div>
+    <div class="small mt-2 fw-semibold">Camiseta Premium Comfort</div>
+    <div class="small text-muted">Tecido de alta qualidade com toque suave.</div>
+    <div class="fw-bold">R$ 159</div>
+  </div>
+
+  <div class="col" role="listitem">
+    <div class="related-product" 
+         role="img" 
+         aria-label="Camiseta Urban Street"
+         style="background-image: url('/produtos/produto12.JPG'); background-size: cover; background-position: center;">
+    </div>
+    <div class="small mt-2 fw-semibold">Camiseta Urban Street</div>
+    <div class="small text-muted">Estilo moderno com caimento perfeito.</div>
+    <div class="fw-bold">R$ 125</div>
+  </div>
+
+  <div class="col" role="listitem">
+    <div class="related-product" 
+         role="img" 
+         aria-label="Camiseta Casual Fit"
+         style="background-image: url('/produtos/produto3.JPG'); background-size: cover; background-position: center;">
+    </div>
+    <div class="small mt-2 fw-semibold">Camiseta Casual Fit</div>
+    <div class="small text-muted">Leve, confortável e versátil para qualquer ocasião.</div>
+    <div class="fw-bold">R$ 65</div>
+  </div>
+
+  <div class="col position-relative" role="listitem">
+    <div class="related-product position-relative"
+         role="img"
+         aria-label="Camiseta Basic Soft"
+         style="background-image: url('/produtos/produto8.JPG'); background-size: cover; background-position: center;">
+      <button class="btn btn-light position-absolute top-50 end-0 translate-middle carousel-control" aria-label="Próximo produto">›</button>
+    </div>
+    <div class="small mt-2 fw-semibold">Camiseta Basic Soft</div>
+    <div class="small text-muted">Modelo básico com acabamento reforçado.</div>
+    <div class="fw-bold">R$ 45</div>
+  </div>
+
+</div>
+
+
+    <!-- CAIXA PROMOCIONAL -->
+    <div class="promo-box text-center mt-5 d-flex justify-content-between align-items-center" 
+    role="complementary" aria-label="Promoção da marca">
+
+ <div class="text-start">
+   <h4 class="fw-bold">Promoção da Marca</h4>
+   <p class="small text-muted">ATÉ</p>
+   <h1 class="fw-bold promo-percent">25%</h1>
+   <p class="small">de desconto em todos os produtos da Marca</p>
+   <a href="checkout.html">
+     <button class="btn btn-dark px-4 mt-2" aria-label="Ir para checkout">COMPRAR AGORA</button>
+   </a>
+ </div>
+
+  </main>
+
+  <!-- ====== RODAPÉ ====== -->
+  <footer class="footer-section py-5" role="contentinfo">
+    <div class="container">
+      <div class="row align-items-start mb-4">
+        <!-- Ajuda -->
+        <div class="col-md-3 mb-4">
+          <h6 class="footer-title">Precisa de ajuda?</h6>
+          <button class="btn btn-dark rounded-pill px-4 py-2 footer-help-btn" aria-label="Entrar em contato">
+            Contate-nos
+          </button>
+        </div>
+
+        <!-- Links do rodapé -->
+        <div class="col-md-9">
+          <div class="row">
+            <!-- Suporte -->
+            <div class="col-md-3 mb-4">
+              <h6 class="footer-title">Suporte ao Cliente</h6>
+              <ul class="list-unstyled footer-links">
+                <li><a href="#" class="text-decoration-none">Devoluções & Garantia</a></li>
+                <li><a href="#" class="text-decoration-none">Pagamentos</a></li>
+                <li><a href="#" class="text-decoration-none">Envio</a></li>
+                <li><a href="#" class="text-decoration-none">Termos de Serviço</a></li>
+                <li><a href="#" class="text-decoration-none">Política de Privacidade</a></li>
+              </ul>
+            </div>
+
+            <!-- Corporativo -->
+            <div class="col-md-3 mb-4">
+              <h6 class="footer-title">Informações Corporativas</h6>
+              <ul class="list-unstyled footer-links">
+                <li><a href="#" class="text-decoration-none">Sobre Nós</a></li>
+                <li><a href="#" class="text-decoration-none">Marcas</a></li>
+                <li><a href="#" class="text-decoration-none">Afiliados</a></li>
+                <li><a href="#" class="text-decoration-none">Investidores</a></li>
+                <li><a href="#" class="text-decoration-none">Cookies</a></li>
+              </ul>
+            </div>
+
+            <!-- Cartão presente -->
+            <div class="col-md-3 mb-4">
+              <h6 class="footer-title">Cartão Presente</h6>
+              <ul class="list-unstyled footer-links">
+                <li><a href="#" class="text-decoration-none">Comprar Cartões Presente</a></li>
+                <li><a href="#" class="text-decoration-none">Resgatar Cartão</a></li>
+              </ul>
+            </div>
+
+            <!-- Localização e redes sociais -->
+            <div class="col-md-3 mb-4">
+              <h6 class="footer-title">Localização</h6>
+              <div class="d-flex align-items-center gap-2 footer-location">
+                <img src="https://flagcdn.com/br.svg" width="22" class="rounded" 
+                     alt="Bandeira do Brasil - Versão brasileira do site">
+                <span>Brasil</span>
+                <span class="dropdown-icon">▾</span>
+              </div>
+              <div class="footer-social">
+                <a href="#" class="text-decoration-none" aria-label="Instagram da Multiverse Outfits">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a href="#" class="text-decoration-none" aria-label="Facebook da Multiverse Outfits">
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a href="#" class="text-decoration-none" aria-label="YouTube da Multiverse Outfits">
+                  <i class="bi bi-youtube"></i>
+                </a>
+                <a href="#" class="text-decoration-none" aria-label="Twitter da Multiverse Outfits">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
